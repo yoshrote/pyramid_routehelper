@@ -285,6 +285,7 @@ def add_resource(self, handler, member_name, collection_name, **kwargs):
             add_route_and_view(self, primary, name_prefix + member_name, member_path, method)
     
     add_route_and_view(self, 'show', name_prefix + member_name, member_path, method)
+    add_route_and_view(self, 'browser_fakeout', name_prefix + member_name, member_path, 'POST')
 
 # Submapper support
 
